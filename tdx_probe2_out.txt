@@ -1,0 +1,33 @@
+### 115.238.90.165:7709
+  quotes OK but EMPTY list
+  kline FAIL: TdxFunctionCallError: calling function error | orig=error: unpack requires a buffer of 4 bytes
+  SH list FAIL: TdxFunctionCallError: calling function error
+### 119.147.171.206:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 114.80.80.222:7711
+  connect FAIL: TdxConnectionError: connection timeout error
+### 221.194.181.176:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 106.120.74.86:7711
+  connect FAIL: TdxConnectionError: connection timeout error
+### 218.108.50.178:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 119.29.51.30:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 113.105.73.88:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 180.153.18.170:7709
+  quotes OK but EMPTY list
+  kline FAIL: TdxFunctionCallError: calling function error | orig=error: unpack requires a buffer of 4 bytes
+  SH list FAIL: TdxFunctionCallError: calling function error
+### 117.184.140.156:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 101.227.73.20:7709
+  connect FAIL: TdxConnectionError: connection timeout error
+### 115.238.56.198:7709
+  quotes OK but EMPTY list
+  kline FAIL: TdxFunctionCallError: calling function error | orig=error: unpack requires a buffer of 4 bytes
+  SH list FAIL: TdxFunctionCallError: calling function error
+
+DEEP PROBE DONE
+EXIT=0

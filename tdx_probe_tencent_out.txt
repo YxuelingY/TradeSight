@@ -1,0 +1,24 @@
+== [1] qt.gtimg.cn 批量实时行情（一次6只）==
+  sh600519: name=贵州茅台 price=1329.00 pre=1312.97 open=1311.57 vol(手)=38502 amount(万)=507553 change=16.03 pct=1.22 fields=88
+  sz000001: name=平安银行 price=11.50 pre=11.41 open=11.41 vol(手)=1111851 amount(万)=128160 change=0.09 pct=0.79 fields=88
+  sz300750: name=宁德时代 price=277.00 pre=278.50 open=281.79 vol(手)=297424 amount(万)=822075 change=-1.50 pct=-0.54 fields=88
+  sh000001: name=上证指数 price=3716.28 pre=3707.48 open=3723.80 vol(手)=472632158 amount(万)=73247519 change=8.80 pct=0.24 fields=88
+  sz000858: name=五 粮 液 price=72.07 pre=71.30 open=70.98 vol(手)=302314 amount(万)=217322 change=0.77 pct=1.08 fields=88
+  sh601318: name=中国平安 price=51.88 pre=51.78 open=51.43 vol(手)=664537 amount(万)=342365 change=0.10 pct=0.19 fields=88
+  耗时 238ms, 原始字节 3103
+
+== [2] ifzq.gtimg.cn 分钟K线（日K dq + 5分钟 m5 + 1分钟 m1）==
+  日K FAIL AttributeError: 'list' object has no attribute 'get'
+  5分钟 FAIL keys=['qt', 'm5', 'prec'] raw=b'{"code":0,"msg":"","data":{"sh600519":{"qt":{"sh600519":["1","\\u8d35\\u5dde\\u8305\\u53f0","600519","1329.00","1312.97","1311.57","38502","21136","17365","1328.58","1","1328.50","1","1328.00","1","1327.9'
+  1分钟 FAIL keys=['qt', 'm1', 'prec'] raw=b'{"code":0,"msg":"","data":{"sh600519":{"qt":{"sh600519":["1","\\u8d35\\u5dde\\u8305\\u53f0","600519","1329.00","1312.97","1311.57","38502","21136","17365","1328.58","1","1328.50","1","1328.00","1","1327.9'
+
+== [3] ifzq 分时（分钟线 m1 语义的当日数据 vs trends）==
+  分时 OK: date=20261016 267条
+    首=0930 1311.57 335 43937595.00 末=1530 1329.00 38522 5078219262.62
+
+== [4] 二次批量验证限流（再发2次，间隔1秒）==
+  #1 OK 86ms 1061字节
+  #2 OK 155ms 1061字节
+
+TENCENT PROBE DONE
+EXIT=0

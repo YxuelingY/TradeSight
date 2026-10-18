@@ -1,0 +1,20 @@
+
+########## 115.238.90.165:7709 ##########
+  --- SZ quotes ---
+  SZ quotes 000001+300750: OK list[0]
+  --- SH quotes ---
+  SH quotes 600519: OK list[0]
+  --- SZ kline cat9 ---
+  SZ kline 000001: FAIL TdxFunctionCallError: calling function error | orig=error('unpack requires a buffer of 4 bytes')
+  --- SH kline cat9 ---
+  SH kline 600519: FAIL TdxFunctionCallError: calling function error | orig=error('unpack requires a buffer of 4 bytes')
+  --- SH kline cat4(日) ---
+  SH kline cat4 600519: FAIL TdxFunctionCallError: calling function error | orig=error('unpack requires a buffer of 4 bytes')
+  --- index kline SH999999 ---
+  index kline: FAIL TdxFunctionCallError: calling function error | orig=error('unpack requires a buffer of 4 bytes')
+  --- SZ list ---
+  SZ list p0: OK list[1000] first=OrderedDict({'code': '395001', 'volunit': 100, 'decimal_point': 2, 'name': '主板Ａ股', 'pre_close': 1495.0})
+  --- SH list ---
+  SH list p0: FAIL TdxFunctionCallError: calling function error | orig=UnicodeDecodeError('gbk', b'ChatGPT\xb8', 7, 8, 'incomplete multibyte sequence')
+  SH list p1000: OK list[1000] first=OrderedDict({'code': '881147', 'volunit': 100, 'decimal_point': 2, 'name': '预加工食', 'pre_close': 648.239990234375})
+EXIT=0
